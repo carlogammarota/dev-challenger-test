@@ -21,19 +21,16 @@ You can also exercise the access required by token in each service, I emphasize 
 
    yarn start
 
-   server run in localhost:3030
+.server run in localhost:3030
 
 
 ## this is the collection name for POSTMAN app. Can be found in the root folder of the project.
 DEV-CHALLENGE-API.postman_collection
 
-## Api Methods
-
-
 ## AUTHENTICATION
     http://localhost:3030/users
 
-## POST - EXAMPLE
+## AUTHENTICATION - POST - EXAMPLE
     {
         "strategy": "local",
         "email": "dev-challenge@dev.com",
@@ -43,7 +40,7 @@ DEV-CHALLENGE-API.postman_collection
 ## LOGIN
     http://localhost:3030/authentication
 
-## POST - EXAMPLE
+## LOGIN - POST - EXAMPLE
     {
         "strategy": "local",
         "email": "dev-challenge@dev.com",
@@ -54,8 +51,11 @@ DEV-CHALLENGE-API.postman_collection
 ## GET, POST, DELETE (REQUIERED AUTH: FALSE)
 
 http://localhost:3030/movies
+
 http://localhost:3030/tv-show
+
 http://localhost:3030/directors
+
 http://localhost:3030/actors
 
 ## EMAIL
