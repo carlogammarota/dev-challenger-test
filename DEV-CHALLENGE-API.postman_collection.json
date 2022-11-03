@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "637b8638-60a5-41ce-aea8-5e8d92baf34a",
+		"name": "DEV-CHALLENGE-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11926501"
+	},
+	"item": [
+		{
+			"name": "LOGIN JWT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"strategy\": \"local\",\n  \"email\": \"dev-challenge@dev.com\",\n  \"password\": \"challenge2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/authentication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ACCOUNT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"strategy\": \"local\",\n  \"email\": \"dev-challenge@dev.com\",\n  \"password\": \"challenge2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/authentication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MOVIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TV-SHOWS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/tv-show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"tv-show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTORS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DIRECTORS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE MOVIE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/movies/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"movies",
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TV-SHOW",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/movies/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"movies",
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DIRECTOR",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/movies/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"movies",
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ACTORS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/movies/ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"movies",
+						"ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE MOVIE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"name\": \"Batman: El caballero de la noche\",\n            \"actors\": [\n                \"Christian Bale\",\n                \"Heath Ledger\",\n                \"Aaron Eckhart\",\n                \"Michael Caine\",\n                \"Maggie Gyllenhaal\",\n                \"Gary Oldman\"\n            ],\n            \"director\": \"Christopher Nolan\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE TV-SHOW",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"name\": \"The Dragon Prince\",\n            \"actors\": [\n                     \"Justin Richmond\", \"Devon Giehl\", \"Iain Hendry\"\n            ],\n            \"director\": \"Aaron Ehasz\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/tv-show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"tv-show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE DIRECTORS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Peter Jackson\", \"movie\": [\"Braindead\", \"Criaturas celestiales\", \"La verdadera historia del cine\", \"The Frighteners\", \"El Señor de los Anillos: la Comunidad del Anillo\"], \"tv-show\": [\"El hobbit: un viaje inesperado\", \"El hobbit: la desolación de Smaug\", \"El hobbit: la batalla de los Cinco Ejércitos\"] }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE actors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Thomas Jeffrey Hanks\", \"movie\": [\"Philadelphia\", \"Forrest Gump\", \"Saving Private Ryan\", \"Náufrago\"], \"tv-show\": [\"Band of Brothers\"] }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
