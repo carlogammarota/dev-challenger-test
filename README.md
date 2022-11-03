@@ -5,6 +5,7 @@
 ## About
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+You can also exercise the access required by token in each service, I emphasize that the added data is not 100% real. 
 
 ## Getting Started
 
@@ -22,9 +23,8 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 
    server run in localhost:3030
 
-## I emphasize that the added data is not 100% real.
 
-## this is the collection for POSTMAN app.
+## this is the collection name for POSTMAN app. Can be found in the root folder of the project.
 DEV-CHALLENGE-API.postman_collection
 
 ## Api Methods
@@ -57,4 +57,6 @@ http://localhost:3030/movies
 http://localhost:3030/tv-show
 http://localhost:3030/directors
 http://localhost:3030/actors
-# dev-challenger-test
+
+## EMAIL
+carlo.gammarota@gmail.com
